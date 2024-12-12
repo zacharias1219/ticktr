@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ConvexClientProvider } from "@/components/ConvexClientProvider";
-// import Header from "@/components/Header";
+import Header from "@/components/Header";
 import { ClerkProvider } from "@clerk/nextjs";
 // import SyncUserWithConvex from "@/components/SyncUserWithConvex";
 // import { Toaster } from "@/components/ui/toaster";
@@ -35,8 +35,8 @@ export default function RootLayout({
       >
         <ConvexClientProvider>
           <ClerkProvider>
-            {/* <Header />
-            <SyncUserWithConvex /> */}
+            <Header />
+            {/* <SyncUserWithConvex /> */}
             {children}
 
             {/* <Toaster /> */}
